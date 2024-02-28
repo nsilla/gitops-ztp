@@ -9,7 +9,7 @@ spec:
   baseDomain: "partnerci.bos2.lab"
   pullSecretRef:
     name: "assisted-deployment-pull-secret"
-  clusterImageSetNameRef: "openshift-4.14"
+  clusterImageSetNameRef: "img4.14.9-x86-64-appsub"
   sshPublicKey: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDXzhvukvk3OS2e2Z8DKACD8spJ4N/W0ylzSqCmUHdxGedyz39UoKA3sQpJv9L3WrPlLZYxCaAC+BdFTxn5lRxwrib7eCUo5ignD7fBcVSF6sHNWlQGjCd33cpdfBG3Nm3WxlGNCYamByRNW3jpG2gwo8WlU6wBDA1TWBbD+TMEth40QyGMfO3w/sPxePV7kLp5psWwh5S+09W8EU5Ana8wbkauuDBSpOeXaFWSUoknGJmDCzV3qTFmk7XXTTGOu3gaUMN9y3ZgyO683Mue1xH5IiR/+DIWs3xDWMd5uSkK8/o2uwBxeQwETqrosug1TxT1U9zfAkXwu932wCSXJZwjogY215lSr7avdLuF/+KQvCo45P4bewl2B9ZJ8TXnVpjgor/Z1kHlrHIeotdkw7UFEqE4r2aUTw4k0yStUWBl/S5XdlaiPLaNEWsWwOEYcg/hzd4sb79i+Kb35q7S8gsh8W4Ngv4YiKoBOXLpoU4BCkmaeASb39C0D1UgcPUEUNooaEhm7Ge0htXQ5yfjTp3Uc2i45LKaB86+uROcTBxlGsGeYaq+EpM1Uwa0toqp8O3sKOJoolHY9v1J7fuHZYW4kAq7sCmvVJmgmbaC6+/26EG3OqzYJakVw7f2EvEkB6TIESEreNDi5M7wMkS/UpoEEzpZw+Yc/t4xZRetOQ5DTw=="
   clusters:
   - clusterName: "server07-vpool-worker-2-sno"
