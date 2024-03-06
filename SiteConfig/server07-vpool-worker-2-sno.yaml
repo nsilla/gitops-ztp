@@ -44,7 +44,7 @@ spec:
     serviceNetwork:
       - 172.30.0.0/16
     additionalNTPSources:
-      - 192.168.16.16
+      - 192.168.16.11
     # Initiates the cluster for workload partitioning. Setting specific reserved/isolated CPUSets is done via PolicyTemplate
     # please see Workload Partitioning Feature for a complete guide.
     cpuPartitioningMode: AllNodes
@@ -52,15 +52,15 @@ spec:
     #crTemplates:
     #  KlusterletAddonConfig: "KlusterletAddonConfigOverride.yaml"
     nodes:
-      - hostName: "dciokd-worker-2.server07.partnerci.bos2.lab"
+      - hostName: "provisionhost.server02.partnerci.bos2.lab"
         role: "master"
         # Optionally; This can be used to configure desired BIOS setting on a host:
         #biosConfigRef:
         #  filePath: "example-hw.profile"
-        bmcAddress: "redfish-virtualmedia://192.168.16.16:8082/redfish/v1/Systems/713d8fbe-bfa7-41a8-8ed5-5d4e8e384ddd"
+        bmcAddress: "redfish-virtualmedia://server02.partnerci.bos2.lab:8082/redfish/v1/Systems/d1046006-838f-4912-bfd4-529239afb0e5"
         bmcCredentialsName:
           name: "server07-vpool-worker-2-sno-bmh-secret"
-        bootMACAddress: "52:54:00:83:27:b1"
+        bootMACAddress: "52:54:00:5f:83:0d"
         # Use UEFISecureBoot to enable secure boot
         bootMode: "UEFI"
           #        rootDeviceHints:
@@ -75,9 +75,9 @@ spec:
         nodeNetwork:
           interfaces:
             - name: eth0
-              macAddress: "52:54:00:83:27:b1"
+              macAddress: "52:54:00:5f:83:0d"
             - name: eth1
-              macAddress: "52:54:00:00:07:06"
+              macAddress: "52:54:00:00:02:00"
           config:
             interfaces:
               - name: eth0
